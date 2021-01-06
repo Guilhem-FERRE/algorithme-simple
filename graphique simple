@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+i=0
+liste = []
+def y1(i):
+    for i in range(6):
+        i=i**2+1
+        liste.append(i)
+        print(i)
+        
+print(y1(i))
+print(liste)
+x=np.array([0,1,2,3,4,5])
+y=np.array(liste)
+plt.plot(x, y)
+plt.title("résultat de la suite Un=i^2 +1 pour n=6 et Uo=0")
+plt.show()
